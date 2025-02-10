@@ -28,11 +28,11 @@
                 <entry key="type" type="xstring" value="Wildcard"/>
                 <entry key="caseSensitive" type="xboolean" value="true"/>
                 <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="includeMissing" type="xboolean" value="false"/>
             </config>
-            <entry key="include_missing" type="xboolean" value="false"/>
         </config>
+        <entry key="missingValueHandling" type="xstring" value="EXCLUDE"/>
     </config>
+    <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.nominal.NominalValueRowFilterNodeFactory"/>
@@ -60,6 +60,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="3a6911e2-5b3a-492e-9103-d8d57e54bc79"/>
+        <entry key="file_store_id" type="xstring" value="1889554b-3181-46ec-813a-9be9754a11c1"/>
     </config>
 </config>

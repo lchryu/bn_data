@@ -10,7 +10,7 @@
     }
   }, {
     "name" : "mo_phong_lai",
-    "active" : false,
+    "active" : true,
     "origin" : {
       "providerId" : "local",
       "spaceId" : "local",
@@ -18,7 +18,7 @@
     }
   }, {
     "name" : "Assignment_1",
-    "active" : true,
+    "active" : false,
     "origin" : {
       "providerId" : "local",
       "spaceId" : "local",

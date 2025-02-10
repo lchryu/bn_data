@@ -368,3 +368,6 @@ The covariance matrix could not be calculated because the observed fisher inform
       font-weight: bold;
       padding: 2px 0.5em;
       [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 14:44:57,504 : WARN  : ModalContext :  : Node : Scatter Plot (legacy) : 3:26 : Some columns are ignored: bounds missing.
+2025-02-10 14:44:57,505 : WARN  : ModalContext :  : Node : Scatter Plot (legacy) : 3:26 : Some columns are ignored: bounds missing.
+2025-02-10 14:55:06,044 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 4:19 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
