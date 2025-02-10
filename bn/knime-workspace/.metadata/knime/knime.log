@@ -1,0 +1,370 @@
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : The term 'Get-MpComputerStatus' is not recognized as the name of a cmdlet, function, script 
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : and try again.
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : ObjectNotFound: (Get-MpComputerStatus:String) [], CommandNotFoundException
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : CommandNotFoundException
+2025-02-10 00:49:38,662 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : The term 'Get-MpComputerStatus' is not recognized as the name of a cmdlet, function, script 
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : and try again.
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : ObjectNotFound: (Get-MpComputerStatus:String) [], CommandNotFoundException
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : CommandNotFoundException
+2025-02-10 01:28:02,990 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2025-02-10 01:28:41,133 : ERROR : ForkJoinPool.commonPool-worker-2 :  : HubSpaceProviders$HubSpaceProvider :  :  : Problem fetching hub spaces for 'My-KNIME-Hub'
+org.knime.core.util.exception.ServerErrorAccessException: 503 An error occurred while fetching the current account's identity: Service not available. Please try again later.
+	at org.knime.core.util.exception.HttpExceptionUtils.wrapException(HttpExceptionUtils.java:90)
+	at com.knime.enterprise.client.rest.HubContent.getCurrentAccountIdentity(HubContent.java:667)
+	at com.knime.explorer.server.internal.APHubFacade.getSpaceRoots(APHubFacade.java:134)
+	at com.knime.explorer.server.internal.APHubFacade.listGroups(APHubFacade.java:107)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider$HubSpaceProviderConnection.fetchGroupsFromHub(HubSpaceProviders.java:282)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider$HubSpaceProviderConnection.updateSpaceMap(HubSpaceProviders.java:238)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider.lambda$5(HubSpaceProviders.java:132)
+	at java.base/java.util.Optional.map(Unknown Source)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider.toEntity(HubSpaceProviders.java:132)
+	at org.knime.gateway.impl.util.NetworkExceptions.lambda$0(NetworkExceptions.java:148)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025-02-10 01:28:44,086 : ERROR : ServerSpace Update Timer :  : UpdateManager :  :  : Server hanabi_1@api.hub.knime.com cache update failed - logging out.
+org.knime.core.util.exception.RuntimeResourceAccessException: 503 An error occurred while fetching the current account's identity: Service not available. Please try again later.
+	at org.knime.core.util.exception.RuntimeResourceAccessException.from(RuntimeResourceAccessException.java:84)
+	at org.knime.core.util.exception.HttpExceptionUtils.returnWithRuntimeException(HttpExceptionUtils.java:116)
+	at com.knime.enterprise.client.rest.RestServerContent.refreshFetchers(RestServerContent.java:740)
+	at com.knime.enterprise.client.rest.RestServerContent.updateContentCache(RestServerContent.java:682)
+	at com.knime.enterprise.client.rest.RestServerContent.updateCacheOnNewContent(RestServerContent.java:1032)
+	at com.knime.explorer.server.internal.UpdateManager$1.run(UpdateManager.java:116)
+	at java.base/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base/java.util.TimerThread.run(Unknown Source)
+Caused by: org.knime.core.util.exception.ServerErrorAccessException: 503 An error occurred while fetching the current account's identity: Service not available. Please try again later.
+	at org.knime.core.util.exception.HttpExceptionUtils.wrapException(HttpExceptionUtils.java:90)
+	at com.knime.enterprise.client.rest.HubContent.getCurrentAccountIdentity(HubContent.java:667)
+	at com.knime.enterprise.client.rest.HubContent.getRepositoryRootEndpoints(HubContent.java:451)
+	at org.knime.core.util.exception.HttpExceptionUtils.returnWithRuntimeException(HttpExceptionUtils.java:114)
+	... 6 more
+2025-02-10 04:35:16,251 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 4:1 : Please specify a file
+2025-02-10 04:58:53,206 : WARN  : main :  : WrappedNodeDialog : Shuffle : 4:2 : failed to apply settings: Can't parse seed as number.
+org.knime.core.node.InvalidSettingsException: Can't parse seed as number.
+	at org.knime.base.node.preproc.shuffle.ShuffleNodeDialogPane.saveSettingsTo(ShuffleNodeDialogPane.java:176)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-02-10 04:58:54,788 : WARN  : main :  : WrappedNodeDialog : Shuffle : 4:2 : failed to apply settings: Can't parse seed as number.
+org.knime.core.node.InvalidSettingsException: Can't parse seed as number.
+	at org.knime.base.node.preproc.shuffle.ShuffleNodeDialogPane.saveSettingsTo(ShuffleNodeDialogPane.java:176)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-02-10 04:59:04,342 : WARN  : main :  : WrappedNodeDialog : Shuffle : 4:2 : failed to apply settings: Can't parse seed as number.
+org.knime.core.node.InvalidSettingsException: Can't parse seed as number.
+	at org.knime.base.node.preproc.shuffle.ShuffleNodeDialogPane.saveSettingsTo(ShuffleNodeDialogPane.java:176)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-02-10 05:03:12,767 : WARN  : main :  : Node : Shuffle : 4:2 : Errors loading flow variables into node : Unable to parse seed "C:\Users\Administrator\Desktop\bn\knime-workspace" as number.
+2025-02-10 05:03:41,903 : WARN  : comm-pool-thread-1 :  : Node : Partitioning : 4:3 : No sampling method selected
+2025-02-10 05:56:17,895 : WARN  : comm-pool-thread-1 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 05:56:30,629 : WARN  : KNIME-Worker-6-Color Manager 4:4 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 05:57:54,654 : WARN  : comm-pool-thread-1 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 05:58:00,425 : WARN  : KNIME-Worker-6-CSV Reader 4:1 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 05:58:00,426 : WARN  : KNIME-Worker-7-Color Manager 4:4 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 06:12:03,168 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:12:34,912 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:12:58,653 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:15:26,683 : WARN  : comm-pool-thread-1 :  : Node : Numeric Scorer : 4:8 : No columns selected for reference
+2025-02-10 06:16:22,952 : WARN  : KNIME-Worker-9-Regression Predictor 4:6 :  : Node : Numeric Scorer : 4:8 : No columns selected for reference
+2025-02-10 06:17:56,487 : WARN  : comm-pool-thread-1 :  : Node : Numeric Scorer : 4:8 : No columns selected for reference
+2025-02-10 06:20:01,663 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 4:8 valid [4:1, 4:2, 4:3, 4:4, 4:5, 4:6, 4:7] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:20:01,667 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:20:01,667 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 4:8 valid [4:1, 4:2, 4:3, 4:4, 4:5, 4:6, 4:7] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 45)
+2025-02-10 06:20:13,057 : WARN  : comm-pool-thread-1 :  : Node : Numeric Scorer : 4:8 : No columns selected for reference
+2025-02-10 06:20:48,043 : WARN  : comm-pool-thread-1 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 06:20:50,617 : WARN  : KNIME-Worker-27-CSV Reader 4:1 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 06:20:52,419 : WARN  : KNIME-Worker-28-Color Manager 4:4 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 06:20:56,367 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:24:04,784 : WARN  : ModalContext :  : Node : Color Manager : 6:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:24:04,799 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 6:19 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2025-02-10 06:24:11,719 : ERROR : KNIME-Worker-45-CSV Reader 6:1 :  : Node : CSV Reader : 6:1 : Execute failed: The specified file newfolder/Fish_Specises.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file newfolder/Fish_Specises.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-02-10 06:24:11,720 : WARN  : KNIME-Worker-45-CSV Reader 6:1 :  : Node : Color Manager : 6:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:24:13,565 : ERROR : KNIME-Worker-46-CSV Reader 6:1 :  : Node : CSV Reader : 6:1 : Execute failed: The specified file newfolder/Fish_Specises.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file newfolder/Fish_Specises.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-02-10 06:24:13,566 : WARN  : KNIME-Worker-46-CSV Reader 6:1 :  : Node : Color Manager : 6:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:24:33,167 : WARN  : ModalContext :  : Node : Color Manager : 6:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:24:33,168 : WARN  : ModalContext :  : Node : Color Manager : 6:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:24:47,409 : ERROR : main :  : RegressionPredictorNodeDialogPane : Regression Predictor : 6:7 : Error loading model settings
+java.lang.NullPointerException: Cannot invoke "org.knime.core.node.port.pmml.PMMLPortObjectSpec.getTargetCols()" because "pmmlSpec" is null
+	at org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeModel.checkModelTargetType(RegressionPredictorNodeModel.java:227)
+	at org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeDialogPane.loadSettingsFrom(RegressionPredictorNodeDialogPane.java:228)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:535)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:488)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-02-10 06:26:43,330 : WARN  : main :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 06:26:44,086 : WARN  : main :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 06:26:45,347 : WARN  : KNIME-Worker-48-CSV Reader 4:1 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 06:26:50,049 : WARN  : KNIME-Worker-49-Color Manager 4:4 :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 06:33:17,699 : WARN  : comm-pool-thread-11 :  : Node : Color Manager : 7:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:33:17,699 : WARN  : comm-pool-thread-11 :  : Node : Color Manager : 7:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:35:15,415 : WARN  : main :  : Node : Color Manager : 7:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:35:16,639 : WARN  : main :  : Node : Color Manager : 7:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 06:35:23,053 : WARN  : KNIME-Worker-90-CSV Reader 7:1 :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:35:23,054 : WARN  : KNIME-Worker-90-CSV Reader 7:1 :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:36:25,905 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:36:25,905 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:36:38,415 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:36:38,415 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:36:39,071 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:36:39,071 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:08,511 : WARN  : main :  : WrappedNodeDialog : Shuffle : 7:3 : failed to apply settings: Can't parse seed as number.
+org.knime.core.node.InvalidSettingsException: Can't parse seed as number.
+	at org.knime.base.node.preproc.shuffle.ShuffleNodeDialogPane.saveSettingsTo(ShuffleNodeDialogPane.java:176)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-02-10 06:38:14,897 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:14,898 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:46,390 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:46,390 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:47,453 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:47,454 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:48,220 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:48,220 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:48,495 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:38:48,495 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:42:12,982 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:43:56,396 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:11 : Some columns are ignored: bounds missing.
+2025-02-10 06:43:56,397 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:43:59,026 : WARN  : KNIME-Worker-139-Numeric Scorer 7:8 :  : Node : Numeric Scorer : 7:8 : Can't calculate Mean Absolute Percentage error: target value is 0! Row31
+2025-02-10 06:46:13,342 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 7:11 valid [7:1, 7:2, 7:3, 7:4, 7:5, 7:7, 7:8, 7:15, 7:16, 7:17, 7:18, 7:19, 7:20, 7:21, 7:22, 7:23, 7:24, 7:25, 7:26, 7:27, 7:29, 7:30, 7:31, 7:32, 7:33, 7:36, 7:37] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:46:13,342 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 06:46:13,342 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 7:11 valid [7:1, 7:2, 7:3, 7:4, 7:5, 7:7, 7:8, 7:15, 7:16, 7:17, 7:18, 7:19, 7:20, 7:21, 7:22, 7:23, 7:24, 7:25, 7:26, 7:27, 7:29, 7:30, 7:31, 7:32, 7:33, 7:36, 7:37] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 45)
+2025-02-10 06:46:44,063 : WARN  : KNIME-Worker-156-Numeric Scorer 7:8 :  : Node : Numeric Scorer : 7:8 : Can't calculate Mean Absolute Percentage error: target value is 0! Row31
+2025-02-10 06:46:50,541 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:46:52,032 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 06:46:52,773 : WARN  : main :  : Node : Scatter Plot (legacy) : 7:26 : Some columns are ignored: bounds missing.
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : The term 'Get-MpComputerStatus' is not recognized as the name of a cmdlet, function, script 
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : and try again.
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : ObjectNotFound: (Get-MpComputerStatus:String) [], CommandNotFoundException
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : CommandNotFoundException
+2025-02-10 09:53:18,799 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2025-02-10 09:53:24,175 : WARN  : ModalContext :  : Node : Scatter Plot (legacy) : 3:26 : Some columns are ignored: bounds missing.
+2025-02-10 09:53:24,176 : WARN  : ModalContext :  : Node : Scatter Plot (legacy) : 3:26 : Some columns are ignored: bounds missing.
+2025-02-10 09:53:31,194 : WARN  : ModalContext :  : Node : Color Manager : 4:4 : Selected column "Species" with default nominal color mapping.
+2025-02-10 10:17:35,106 : WARN  : ModalContext :  : Node : Color Manager : 5:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 10:17:35,111 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 5:19 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2025-02-10 10:23:14,406 : WARN  : main :  : Node : Color Manager : 5:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 10:23:15,022 : WARN  : main :  : Node : Color Manager : 5:2 : Column "Species" has no nominal values set: execute predecessor or add Binner.
+2025-02-10 10:23:19,946 : WARN  : KNIME-Worker-2-CSV Reader 5:1 :  : Node : Scatter Plot (legacy) : 5:11 : Some columns are ignored: bounds missing.
+2025-02-10 10:23:19,947 : WARN  : KNIME-Worker-2-CSV Reader 5:1 :  : Node : Scatter Plot (legacy) : 5:26 : Some columns are ignored: bounds missing.
+2025-02-10 10:49:58,905 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)
+2025-02-10 11:00:45,157 : WARN  : KNIME-Worker-18-Logistic Regression Learner 3:19 :  : Node : Logistic Regression Learner : 3:19 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2025-02-10 11:02:57,975 : WARN  : KNIME-Worker-19-Logistic Regression Learner 3:19 :  : Node : Logistic Regression Learner : 3:19 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2025-02-10 11:57:43,146 : WARN  : main :  : Node : Scatter Plot (legacy) : 3:11 : Some columns are ignored: bounds missing.
+2025-02-10 11:57:43,146 : WARN  : main :  : Node : Scatter Plot (legacy) : 3:26 : Some columns are ignored: bounds missing.
+2025-02-10 11:57:43,796 : WARN  : main :  : Node : Scatter Plot (legacy) : 3:11 : Some columns are ignored: bounds missing.
+2025-02-10 11:57:43,797 : WARN  : main :  : Node : Scatter Plot (legacy) : 3:26 : Some columns are ignored: bounds missing.
+2025-02-10 11:57:47,247 : WARN  : KNIME-Worker-51-Logistic Regression Learner 3:19 :  : Node : Logistic Regression Learner : 3:19 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2025-02-10 13:29:46,353 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 3:19 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2025-02-10 13:29:46,535 : WARN  : ModalContext :  : Node : Scatter Plot (legacy) : 3:26 : Some columns are ignored: bounds missing.
+2025-02-10 13:29:46,535 : WARN  : ModalContext :  : Node : Scatter Plot (legacy) : 3:26 : Some columns are ignored: bounds missing.
+2025-02-10 13:30:41,934 : WARN  : ModalContext :  : Node : Scatter Plot (legacy) : 4:26 : Some columns are ignored: bounds missing.
+2025-02-10 13:30:41,934 : WARN  : ModalContext :  : Node : Scatter Plot (legacy) : 4:26 : Some columns are ignored: bounds missing.
+2025-02-10 14:03:48,072 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CS720IlZ.js; line: 87)

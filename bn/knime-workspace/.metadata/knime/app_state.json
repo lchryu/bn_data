@@ -1,0 +1,83 @@
+{
+  "version" : "5.4.1.v202501291459",
+  "projects" : [ {
+    "name" : "KNIME_project1_test",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "KNIME_project1_test"
+    }
+  }, {
+    "name" : "mo_phong_lai",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "mo_phong_lai"
+    }
+  }, {
+    "name" : "Assignment_1",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "Assignment_1"
+    }
+  } ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "KNIME_project",
+    "timeUsed" : "2025-02-10T01:28:54.4082801+07:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "KNIME_project"
+    }
+  }, {
+    "name" : "KNIME_project1_test",
+    "timeUsed" : "2025-02-10T01:31:41.0410142+07:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "KNIME_project1_test"
+    }
+  }, {
+    "name" : "KNIME_project1",
+    "timeUsed" : "2025-02-10T06:22:57.7739322+07:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "KNIME_project1"
+    }
+  }, {
+    "name" : "mo_phong_lai",
+    "timeUsed" : "2025-02-10T06:33:16.2817577+07:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "mo_phong_lai"
+    }
+  }, {
+    "name" : "tesst2",
+    "timeUsed" : "2025-02-10T10:16:28.1331364+07:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "tesst2"
+    }
+  }, {
+    "name" : "Assignment_1",
+    "timeUsed" : "2025-02-10T10:17:35.1611283+07:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Assignment_1"
+    }
+  } ]
+}
